@@ -123,7 +123,7 @@ select:hover,
 .frameworks-list,
 .books-list {
     /* 📍 Свойства flexbox для отступов между элементами в списках */
-    column-gap: 16px;
+    gap: 16px;
 }
 
 .frameworks-list {
@@ -136,13 +136,16 @@ select:hover,
 .skills-block {
     /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
     display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+
 }
 
 .skills {
     /* 📍 Свойства flexbox для расположения элементов с классом .label */
     display: flex;
     flex-direction: column;
-    column-gap: 20px;
+    gap: 20px;
 }
 
 .books-list {
